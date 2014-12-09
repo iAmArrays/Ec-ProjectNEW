@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  permalink: MyString
+  content: MyText
+
+two:
+  Name: MyString
+  permalink: MyString
+  content: MyText

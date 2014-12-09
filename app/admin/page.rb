@@ -1,17 +1,6 @@
-ActiveAdmin.register Design do
+ActiveAdmin.register Page do
 
 
-  index title: 'Designs' do
-    selectable_column
-    column :name
-    column :author
-    column :description
-    column :category
-
-    actions
-  end
-
-  permit_params :category
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -24,5 +13,6 @@ ActiveAdmin.register Design do
   #   permitted << :other if resource.something?
   #   permitted
   # end
+
 
 end
