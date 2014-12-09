@@ -1,5 +1,15 @@
 ActiveAdmin.register Design do
 
+
+  index title: 'Designs' do
+    selectable_column
+    column :name
+    column :author
+    column :description
+    column :category
+
+    actions
+  end
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
