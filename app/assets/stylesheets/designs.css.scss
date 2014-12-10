@@ -1,3 +1,27 @@
 // Place all the styles related to the design controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$background-body: #ccc;
+$background-page: #fff;
+$font: Helvetica, sans-serif;
+$border-radius: 3px;
+$box-shadow: 1px 1px 1px #333;
+$page_padding: 10px;
+
+body{
+  background-color: $background-body;
+  font: $font;
+}
+
+.container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: $page_padding;
+  background-color: $background-page;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.listOfDesigns{
+  padding: 10px 5px;
+}
