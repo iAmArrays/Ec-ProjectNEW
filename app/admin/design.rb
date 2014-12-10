@@ -11,7 +11,7 @@ ActiveAdmin.register Design do
     actions
   end
 
-  permit_params :category
+  permit_params :category_id
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
