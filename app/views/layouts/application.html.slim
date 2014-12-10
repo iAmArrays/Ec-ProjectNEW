@@ -1,13 +1,16 @@
 doctype html
-html
+html lang="en"
   head
-    title ECProject
-    == stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    title Design your Life
+    meta charset="UTF-8"
+    == stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
-
   body
-    header
-      h1 Design your life
+    div.container
+      header
+        h1.companyName Design your life
 
-    == yield
+      == render 'layouts/navigation'
+
+      == yield
