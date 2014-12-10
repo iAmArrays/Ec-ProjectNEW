@@ -12,7 +12,10 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#index', as: 'contact'
 
   get 'categories' => 'categories#index', as: 'categories'
+
   get 'categories/:id' => 'categories#show', as: 'category'
+
+  get 'search_results' => 'main#search_results', as: 'search_results'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

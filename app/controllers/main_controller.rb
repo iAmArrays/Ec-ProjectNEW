@@ -3,4 +3,8 @@ class MainController < ApplicationController
     @designs = Design.all
     @categories = Category.all
   end
+
+  def search_results
+    @designs = Design.all
+  end
 end

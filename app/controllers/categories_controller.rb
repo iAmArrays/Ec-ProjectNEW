@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @designs = Category.find_by_id(params[:id])
+    @designs = Category.find_by_id(params[:id]).designs
     @categories = Category.all
   end
 end

@@ -7,10 +7,15 @@ html lang="en"
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
   body
-    div.container
+    section.container
       header
         h1.companyName Design your life
 
       == render 'layouts/navigation'
+
+      section.search
+        == form_tag search_results_path, method: :get do
+          == text_field_tag :search_keywords
+          == submit_tag 'Search'
 
       == yield

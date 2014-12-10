@@ -1,3 +1,4 @@
-h3 == @desgins.first.category.name
+//h3 == @designs.first.category.name
 
-== render partial: @designs
+- @designs.each do |design|
+  == render 'designs/design'
