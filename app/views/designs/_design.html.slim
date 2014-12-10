@@ -5,3 +5,6 @@ div class="design"
   p == design.description
 
   p By: #{design.author}
+
+  - if design.avatar.present?
+    == image_tag design.avatar.url 
