@@ -11,7 +11,18 @@ ActiveAdmin.register Design do
     actions
   end
 
-  permit_params :category_id
+  form(html: { multipart: true }) do |f|
+    f.inputs 'Design Details' do
+      f.input :name
+      f.input :author
+      f.input :description
+      f.input :category
+      f.input :avatar
+    end
+    f.actions
+  end
+
+  permit_params :category_id, :avatar
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
