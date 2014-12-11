@@ -1,3 +1,6 @@
 h2 Search Results
 
-  == render @designs
+  - if @designs.size.zero?
+    p No designs found. Try again!
+  - else
+    == render @designs
